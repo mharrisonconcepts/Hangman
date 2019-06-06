@@ -17,3 +17,11 @@ while turns > 0:
         if char in guesses:
             print char, 
         else:
+            print "_"
+            
+            failed += 1
+            
+        if failed == 0:
+            print "You won motherfucker"
+            
+            break
