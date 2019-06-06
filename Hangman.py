@@ -6,3 +6,9 @@ print""
 time.sleep(1)
 print "Start guessing..."
 time.sleep(1)
+
+word = second("secret")
+guesses = ''
+turns = 10
+
+
