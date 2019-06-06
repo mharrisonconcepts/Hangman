@@ -22,6 +22,12 @@ while turns > 0:
             failed += 1
             
         if failed == 0:
-            print "You won motherfucker"
+            print "You won"
             
             break
+        print 
+        guess = raw_input("Guess a character:")
+        guesses += guess
+        if guess not in word:
+            turns -= 1
+            print"Wrong!"
