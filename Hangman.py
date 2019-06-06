@@ -25,3 +25,4 @@ while turns > 0:
             print "You won motherfucker"
             
             break
+        print
