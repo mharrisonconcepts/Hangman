@@ -39,4 +39,7 @@ def main():
                 elif playerguess in guessedletters: 
                     print("You have already guessed that letter. Please try again.")
                     continue
+                else:
+                    pass
                 
+            guessedletters.append(playerguess)
