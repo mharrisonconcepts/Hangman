@@ -33,4 +33,7 @@ def main():
                 if not playerguess.isalpha(): 
                     print("That is not a letter. Please try again.")
                     continue
-            
+                elif len(playerguess) > 1:
+                    print("That is more than one letter. Please try again")
+                    continue
+                
