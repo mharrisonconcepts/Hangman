@@ -18,6 +18,11 @@ def main():
         joinedword = None
 
         attempts = 10
+        
+        if not words:
+            print("Array is empty")
+             
+            
 
         while (attempts != 0 and "-" in wordguessed):
             print(("\nYou have {} attempts remaining").format(attempts))
@@ -60,6 +65,7 @@ def main():
 
         response = input("> ").lower()
         if response not in ("yes", "y"):
+            words.remove(chosenword)
             playagain = False
 
 if __name__ == "__main__":
