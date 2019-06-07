@@ -51,4 +51,5 @@ def main():
             if playerguess not in chosenword:
                 attempts -= 1
                 
-                
+        if "-" not in wordguessed:
+            print(("\nCongratulations! {} was the word").format(chosenword))
