@@ -23,3 +23,10 @@ def main():
             print(("\nYou have {} attempts remaining").format(attempts))
             joinedword = "".join(wordguessed)
             print(joinedword)
+            
+            try:
+                playerguess = str(input("\nPlease select a letter between A-Z"))
+            except:
+                print("That is not valid input. Please try again.")
+                continue
+            
