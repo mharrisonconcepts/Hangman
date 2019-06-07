@@ -36,4 +36,7 @@ def main():
                 elif len(playerguess) > 1:
                     print("That is more than one letter. Please try again")
                     continue
+                elif playerguess in guessedletters: 
+                    print("You have already guessed that letter. Please try again.")
+                    continue
                 
