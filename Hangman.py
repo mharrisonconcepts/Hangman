@@ -25,10 +25,16 @@ while turns > 0:
             print "You won"
             
             break
-<<<<<<< HEAD
+        
         print 
         guess = raw_input("Guess a character:")
         guesses += guess
         if guess not in word:
             turns -= 1
-            print"Wrong!">>>>>>> aa58b535155c45a554bc90ca4c8f55448b91e0dd
+            print"Wrong!"
+            
+            print "You have", + turns, 'more guesses'
+            
+            if turns == 0:
+                
+                print "YOU LOSE YOU ARE LOSER HA"
