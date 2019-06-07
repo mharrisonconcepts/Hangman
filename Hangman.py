@@ -43,3 +43,7 @@ def main():
                     pass
                 
             guessedletters.append(playerguess)
+
+            for letter in range(len(chosenword)):
+                if playerguess == chosenword[letter]:
+                    wordguessed[letter] = playerguess
