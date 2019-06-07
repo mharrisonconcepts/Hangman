@@ -16,3 +16,7 @@ def main():
         for letter in chosenword:
             wordguessed.append("-")
         joinedword = None
+        
+        attempts = 10
+        
+        while (attempts !0 and "-" in wordguessed):
