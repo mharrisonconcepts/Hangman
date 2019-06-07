@@ -47,3 +47,8 @@ def main():
             for letter in range(len(chosenword)):
                 if playerguess == chosenword[letter]:
                     wordguessed[letter] = playerguess
+                    
+            if playerguess not in chosenword:
+                attempts -= 1
+                
+                
