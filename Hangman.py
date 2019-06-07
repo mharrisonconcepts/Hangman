@@ -1,7 +1,7 @@
 import random
 
 def main():
-    welcome = ['Welcome to Hangman!']
+    welcome = ['Welcome to Matt and Grace Hangman!']
     for line in welcome:
         print(line, sep='/n')
 
