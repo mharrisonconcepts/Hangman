@@ -62,3 +62,6 @@ def main():
         response = input("> ").lower()
         if response not in ("yes", "y"):
             playagain = False   
+            
+if __name__ == "__main__":
+    main()
