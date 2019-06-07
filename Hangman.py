@@ -57,4 +57,8 @@ def main():
         else:
             print(("\nUnlucky! The word was {}.").format(chosenword))
             
-            
+         print("\nWould you like to play again?")
+
+        response = input("> ").lower()
+        if response not in ("yes", "y"):
+            playagain = False   
