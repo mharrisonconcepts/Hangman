@@ -53,3 +53,8 @@ def main():
                 
         if "-" not in wordguessed:
             print(("\nCongratulations! {} was the word").format(chosenword))
+            
+        else:
+            print(("\nUnlucky! The word was {}.").format(chosenword))
+            
+            
