@@ -8,7 +8,7 @@ def main():
     playagain = True
 
     while playagain:
-        words = ["hangman", "bathrobe", "computer", "python"]
+        words = ["hangman", "bathrobe", "computer", "python", "martian", "eating", "requirement", "lazarus" ]
         chosenword = random.choice(words).lower()
         playerguess = None
         guessedletters = []
