@@ -1,10 +1,10 @@
-import random 
+import random
 
 def main():
-    welcome = ["Welcome to Matt and Grace's epic hangman game!"]
+    welcome = ['Welcome to Hangman!']
     for line in welcome:
         print(line, sep='/n')
-        
+
     playagain = True
 
     while playagain:
@@ -16,52 +16,53 @@ def main():
         for letter in chosenword:
             wordguessed.append("-")
         joinedword = None
-        
+
         attempts = 10
-        
+
         while (attempts != 0 and "-" in wordguessed):
             print(("\nYou have {} attempts remaining").format(attempts))
             joinedword = "".join(wordguessed)
             print(joinedword)
-            
+
             try:
-                playerguess = str(input("\nPlease select a letter between A-Z"))
-            except:
+                playerguess = str(input("\nPlease select a letter between A-Z" + "\n> ")).lower()
+            except: 
                 print("That is not valid input. Please try again.")
-                continue
+                continue                
             else: 
                 if not playerguess.isalpha(): 
                     print("That is not a letter. Please try again.")
                     continue
-                elif len(playerguess) > 1:
-                    print("That is more than one letter. Please try again")
+                elif len(playerguess) > 1: 
+                    print("That is more than one letter. Please try again.")
                     continue
                 elif playerguess in guessedletters: 
                     print("You have already guessed that letter. Please try again.")
                     continue
                 else:
                     pass
-                
+
             guessedletters.append(playerguess)
 
             for letter in range(len(chosenword)):
                 if playerguess == chosenword[letter]:
                     wordguessed[letter] = playerguess
-                    
+
             if playerguess not in chosenword:
                 attempts -= 1
-                
+
         if "-" not in wordguessed:
             print(("\nCongratulations! {} was the word").format(chosenword))
-            
         else:
             print(("\nUnlucky! The word was {}.").format(chosenword))
-            
-    print("\nWould you like to play again?")
 
-response = input("> ").lower()
-if response not in ("yes", "y"):
-    playagain = False   
-            
+        print("\nWould you like to play again?")
+
+        response = input("> ").lower()
+        if response not in ("yes", "y"):
+            playagain = False
+
 if __name__ == "__main__":
     main()
+
+            
