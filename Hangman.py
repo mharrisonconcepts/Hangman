@@ -19,7 +19,7 @@ def main():
         
         attempts = 10
         
-        while (attempts !0 and "-" in wordguessed):
+        while (attempts != 0 and "-" in wordguessed):
             print(("\nYou have {} attempts remaining").format(attempts))
             joinedword = "".join(wordguessed)
             print(joinedword)
@@ -57,11 +57,11 @@ def main():
         else:
             print(("\nUnlucky! The word was {}.").format(chosenword))
             
-         print("\nWould you like to play again?")
+    print("\nWould you like to play again?")
 
-        response = input("> ").lower()
-        if response not in ("yes", "y"):
-            playagain = False   
+response = input("> ").lower()
+if response not in ("yes", "y"):
+    playagain = False   
             
 if __name__ == "__main__":
     main()
