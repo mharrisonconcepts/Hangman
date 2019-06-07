@@ -20,3 +20,6 @@ def main():
         attempts = 10
         
         while (attempts !0 and "-" in wordguessed):
+            print(("\nYou have {} attempts remaining").format(attempts))
+            joinedword = "".join(wordguessed)
+            print(joinedword)
