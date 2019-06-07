@@ -29,4 +29,8 @@ def main():
             except:
                 print("That is not valid input. Please try again.")
                 continue
+            else: 
+                if not playerguess.isalpha(): 
+                    print("That is not a letter. Please try again.")
+                    continue
             
